@@ -1,7 +1,24 @@
+/* Define variables */
+:root {
+  --color-brand-light: #819B57;
+  --color-brand-dark: #465929;
+  --color-primary-light: #FAF4EA;
+  --color-primary-dark: #31261A;
+}
+
+/* Base */
+body {
+  color: var(--color-primary-dark)
+}
+ul {
+  list-style: none;
+}
+
+/* Button styles */
 .button {
-  background-color: #819B57;
-  color: white;
-  border: 2px solid #819B57;
+  background-color: var(--color-brand-light);
+  color: var(--color-primary-light);
+  border: 2px solid var(--color-brand-light);
   border-radius: 8px;
   font-weight: bold;
   width: 232px;
@@ -12,8 +29,33 @@
 
 .button:hover {
   background-color: transparent;
-  color:#819B57;
-
+  color:var(--color-brand-dark);
 }
 
+/* Link styles */
+.link {
+  color: var(--color-primary-light);
+}
 
+.link:hover {
+  color: var(--color-brand-light);
+}
+
+/* Hero section */
+.hero-title {
+  color: var(--color-primary-light);
+}
+
+.hero-title .accent {
+  color: var(--color-brand-light);
+}
+
+/* Advantages section */
+.advantages-list {
+  color: var(--color-primary-light);
+  background-color: var(--color-brand-light);
+}
+
+.section-title .accent {
+  color: var(--color-brand-dark);
+}
