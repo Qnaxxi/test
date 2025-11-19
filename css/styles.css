@@ -156,16 +156,18 @@ ul {
 
 /* Advantages section */
 .advantages-section {
-    background-color: var(--color-brand-light);
+  padding: 16px 0;
+  background-color: var(--color-brand-light);
 }
 
 .advantages-list {
-  color: var(--color-primary-light);
   display: flex;
   justify-content: space-between;
+  gap: 40px;
 }
 
 .advantages-item {
+  color: var(--color-primary-light);
   font-size: 20px;
   font-weight: 300;
 }
@@ -185,10 +187,23 @@ ul {
   padding-top: 96px;
 }
 
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.traditions-content {
+  max-width: 710px;
+}
+
 .traditions-title {
   margin-bottom: 42px;
 }
 
+.traditions-text.limited {
+  max-width: 340px;
+}
 
 .traditions-text .brand {
   color: var(--color-brand-light);
@@ -205,6 +220,19 @@ ul {
   margin-bottom: 80px;
 }
 
+.chefs-list {
+  display: flex;
+  gap: 20px;
+}
+
+.chefs-item {
+  flex-basis: calc((100% - 40px) / 2);
+}
+
+.chefs-about {
+  padding: 24px;
+}
+
 .chef-title {
   margin-bottom: 16px;
   font-size: 40px;
@@ -212,6 +240,22 @@ ul {
 }
 
 /* Formats section */
+.formats-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.formats-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+
+.format-card {
+  padding: 24px;
+  border: 1px solid lightgray;
+  border-radius: 16px;
+}
+
 .formats-title {
   margin-bottom: 80px;
 }
