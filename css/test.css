@@ -21,20 +21,34 @@
   width: 150px;
   height: 150px;
   background-color: red;
-  transform: translateY(-20px);
-  transition-property: background-color;
-  transition-duration: 2s;
+  transform: translateX(-20px);
+  transition: background-color 1s, color 1s, transform 1s;
 }
 
 .item.red:hover {
+  transform: translateX(0);
   background-color: pink;
+  color: black;
 }
 
 .item.green {
   width: 150px;
   height: 150px;
   background-color: green;
-  transform: rotate(45deg);
+  animation-name: spin;
+  animation-duration: 2s;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .item.blue {
