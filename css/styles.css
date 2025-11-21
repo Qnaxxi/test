@@ -124,7 +124,7 @@ ul {
 
 /* Header */
 .header {
-  background-color: lightgray; /* Remove */
+  background-color: #a28268;
 }
 
 .header-container {
@@ -240,7 +240,8 @@ ul {
 /* Chefs section */
 .chefs-list {
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 40px 30px;
 }
 
 .chefs-item {
@@ -276,6 +277,14 @@ ul {
   border-radius: 4px 4px 4px 200px;
   box-shadow: -16px 16px 0 0 var(--color-primary-light),
     -16px 16px 0 2px var(--color-secondary-dark);
+}
+
+.chef-text p {
+  margin-bottom: 24px;
+}
+
+.chef-text p:last-child {
+  margin-bottom: 0px;
 }
 
 /* Formats section */
