@@ -275,7 +275,6 @@ ul {
   right: 0;
 }
 
-
 .chef-title {
   margin-bottom: 16px;
   font-size: 40px;
@@ -387,11 +386,11 @@ ul {
   background-image: url(/images/footer-background.png);
   background-color: var(--color-primary-dark);
   background-position: center;
-  background-repeat: no repeat;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
-.footer:before, 
+.footer:before,
 .footer::after {
   position: absolute;
   background-repeat: no-repeat;
@@ -469,7 +468,13 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .modal {
@@ -486,4 +491,3 @@ ul {
   top: 40px;
   right: 40px;
 }
-

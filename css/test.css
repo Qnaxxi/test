@@ -2,39 +2,51 @@
   box-sizing: border-box;
 }
 
-.container {
+.parent {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
   padding: 20px;
   border: 1px solid black;
 }
 
-.parent {
-  padding: 20px;
-  border: 1px solid black;
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 .item.red {
   width: 150px;
   height: 150px;
   background-color: red;
+  transform: translateY(-20px);
+  transition-property: background-color;
+  transition-duration: 2s;
+}
+
+.item.red:hover {
+  background-color: pink;
 }
 
 .item.green {
-  position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   background-color: green;
+  transform: rotate(45deg);
 }
 
 .item.blue {
-  position: relative;
-  z-index: 1;
-  width: 50px;
-  height: 50px;
+  width: 150px;
+  height: 150px;
   background-color: blue;
+  transform: scale(1.5);
 }
 
-.section-title {
-  position: sticky;
-  top: 0;
-  background-color: antiquewhite;
+.item.orange {
+  width: 150px;
+  height: 150px;
+  background-color: orange;
+  transform: skew(20deg, 202deg);
 }
