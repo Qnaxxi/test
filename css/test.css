@@ -1,3 +1,75 @@
 * {
   box-sizing: border-box;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+.is-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.form-field {
+  margin-bottom: 24px;
+}
+
+.form-input {
+  padding: 16px 42px;
+  font-size: 14px;
+  border: 1px solid #a28268;
+  border-radius: 8px;
+  width: 605px;
+  height: 55px;
+  max-width: 100%;
+  background-color: transparent;
+}
+
+.form-input:focus {
+  border-color: #819b57;
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: #a28268;
+}
+
+.form-input:focus::placeholder {
+  color: #31261a;
+}
+
+.button {
+  color: white;
+  padding: 16px 32px;
+  background-color: #819b57;
+  border: none;
+  border-radius: 8px;
+}
+
+.button:hover {
+  color: black;
+  background-color: transparent;
+  border: 1px solid #819b57;
+}
+
+.contact-title {
+  margin-bottom: 16px;
+  font-size: 64px;
+  font-weight: 900;
+}
+
+.contact-text {
+  color: #819b57;
+  font-size: 18px;
+  margin-bottom: 42px;
+}
