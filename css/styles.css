@@ -507,6 +507,7 @@ ul {
   max-height: 880px;
   background-color: var(--color-primary-light);
   border-radius: 32px;
+  padding: 128px;
 }
 
 .modal-btn-close {
